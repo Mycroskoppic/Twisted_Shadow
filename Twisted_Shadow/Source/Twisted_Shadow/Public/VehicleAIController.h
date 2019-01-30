@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "AIController.h"
+#include "Vehicle.h"
 #include "VehicleAIController.generated.h"
 
 /**
@@ -15,6 +16,10 @@ class TWISTED_SHADOW_API AVehicleAIController : public AAIController
 	GENERATED_BODY()
 	
 	
-	
+public:
+
+	AVehicle* GetControlledVehicle() const;
+
+	virtual void BeginPlay() override;
 	
 };
