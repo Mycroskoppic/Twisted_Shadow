@@ -4,13 +4,14 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/PlayerController.h"
+#include "Vehicle.h"
 #include "MainPlayerController.generated.h"
 
 /**
  * 
  */
 
-class AVehicle;
+
 
 
 UCLASS()
@@ -23,5 +24,6 @@ public:
 
 	AVehicle* GetControlledVehicle() const;
 	
+	virtual void BeginPlay() override;
 	
 };
